@@ -12,10 +12,6 @@ export interface Emotion {
    * The emotion identified by the user in the form.
    */
   name: Emotions,
-  /** Percentage number expressed in decimal form.
-   * @example `intensity: 0.20` means 20%
-   */
-  intensity: number,
   /** 
    * Identifies which level the named emotion is
    * on the emotion wheel. The more specific the
