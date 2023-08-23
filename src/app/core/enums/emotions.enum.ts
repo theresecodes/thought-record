@@ -1,4 +1,4 @@
-export enum Emotions {
+export enum Emotion {
   HAPPY = 'HAPPY',
   FEARFUL = 'FEARFUL',
   BAD = 'BAD',

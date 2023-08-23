@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+  background-color: #FAFAFA;
+  height: 100%;
+}
+
+// Needs to have important to override angular material styling
+// yellow
+.HAPPY {
+ background-color: #FDDA0D !important;
+}
+
+// blue
+.SAD {
+ background-color: #89CFF0 !important;
+}
+
+// purple
+.SURPRISED {
+  background-color: #A95C68 !important;
+}
+
+// brownish
+.DISGUSTED {
+  background-color: #D3D3D3 !important;
+}
+
+// reddish
+.ANGRY {
+  background-color: #E35335 !important;
+}
+
+// orange
+.FEARFUL {
+  background-color: #FFA500 !important;
+}
+
+// greenish
+.BAD {
+  background-color: #40B5AD !important;
+}
