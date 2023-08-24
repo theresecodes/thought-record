@@ -1,1 +1,6 @@
-<p>records works!</p>
+<div class="records-container">
+  <app-record-card
+    *ngFor="let record of thoughtRecords"
+    [thoughtRecord]="record">
+  </app-record-card>
+</div>

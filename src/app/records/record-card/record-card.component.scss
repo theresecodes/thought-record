@@ -1,0 +1,13 @@
+.record-card {
+  width: 15rem;
+  height: 9rem;
+ 
+  &__title {
+    margin-bottom: 0.5rem;
+  }
+
+  &__content {
+    overflow: hidden;
+  }
+
+}

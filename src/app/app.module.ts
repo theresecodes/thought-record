@@ -6,13 +6,12 @@ import { RecordsModule } from './records/records.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
     RecordsModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

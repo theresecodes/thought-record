@@ -1,906 +1,906 @@
-import { Emotions, Specificity } from '../enums';
+import { Emotion, Specificity } from '../enums';
 
 export const HAPPY = {
   id: 0,
-  name: Emotions.HAPPY,
+  name: Emotion.HAPPY,
   specificity: Specificity.CORE,
-  groups: [Emotions.HAPPY]
+  groups: [Emotion.HAPPY]
 };
 
 export const FEARFUL = {
   id: 1,
-  name: Emotions.FEARFUL,
+  name: Emotion.FEARFUL,
   specificity: Specificity.CORE,
-  groups: [Emotions.FEARFUL]
+  groups: [Emotion.FEARFUL]
 };
 
 export const BAD = {
   id: 2,
-  name: Emotions.BAD,
+  name: Emotion.BAD,
   specificity: Specificity.CORE,
-  groups: [Emotions.BAD]
+  groups: [Emotion.BAD]
 };
 
 export const SURPRISED = {
   id: 3,
-  name: Emotions.SURPRISED,
+  name: Emotion.SURPRISED,
   specificity: Specificity.CORE,
-  groups: [Emotions.SURPRISED]
+  groups: [Emotion.SURPRISED]
 };
 
 export const SAD = {
   id: 4,
-  name: Emotions.SAD,
+  name: Emotion.SAD,
   specificity: Specificity.CORE,
-  groups: [Emotions.SAD]
+  groups: [Emotion.SAD]
 };
 
 export const DISGUSTED = {
   id: 5,
-  name: Emotions.DISGUSTED,
+  name: Emotion.DISGUSTED,
   specificity: Specificity.CORE,
-  groups: [Emotions.DISGUSTED]
+  groups: [Emotion.DISGUSTED]
 };
 
 export const ANGRY = {
   id: 6,
-  name: Emotions.ANGRY,
+  name: Emotion.ANGRY,
   specificity: Specificity.CORE,
-  groups: [Emotions.ANGRY]
+  groups: [Emotion.ANGRY]
 };
 
 export const PLAYFUL = {
   id: 7,
-  name: Emotions.PLAYFUL,
+  name: Emotion.PLAYFUL,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.HAPPY, Emotions.PLAYFUL]
+  groups: [Emotion.HAPPY, Emotion.PLAYFUL]
 };
 
 export const CONTENT = {
   id: 8,
-  name: Emotions.CONTENT,
+  name: Emotion.CONTENT,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.HAPPY, Emotions.CONTENT]
+  groups: [Emotion.HAPPY, Emotion.CONTENT]
 };
 
 export const INTERESTED = {
   id: 9,
-  name: Emotions.INTERESTED,
+  name: Emotion.INTERESTED,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.INTERESTED, Emotions.HAPPY]
+  groups: [Emotion.INTERESTED, Emotion.HAPPY]
 };
 
 export const PROUD = {
   id: 10,
-  name: Emotions.PROUD,
+  name: Emotion.PROUD,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.HAPPY, Emotions.PROUD]
+  groups: [Emotion.HAPPY, Emotion.PROUD]
 };
 
 export const ACCEPTED = {
   id: 11,
-  name: Emotions.ACCEPTED,
+  name: Emotion.ACCEPTED,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.ACCEPTED, Emotions.HAPPY]
+  groups: [Emotion.ACCEPTED, Emotion.HAPPY]
 };
 
 export const POWERFUL = {
   id: 12,
-  name: Emotions.POWERFUL,
+  name: Emotion.POWERFUL,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.HAPPY, Emotions.POWERFUL]
+  groups: [Emotion.HAPPY, Emotion.POWERFUL]
 };
 
 export const PEACEFUL = {
   id: 13,
-  name: Emotions.PEACEFUL,
+  name: Emotion.PEACEFUL,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.HAPPY, Emotions.PEACEFUL]
+  groups: [Emotion.HAPPY, Emotion.PEACEFUL]
 };
 
 export const TRUSTING = {
   id: 14,
-  name: Emotions.TRUSTING,
+  name: Emotion.TRUSTING,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.HAPPY, Emotions.TRUSTING]
+  groups: [Emotion.HAPPY, Emotion.TRUSTING]
 };
 
 export const OPTIMISTIC = {
   id: 15,
-  name: Emotions.OPTIMISTIC,
+  name: Emotion.OPTIMISTIC,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.OPTIMISTIC, Emotions.HAPPY]
+  groups: [Emotion.OPTIMISTIC, Emotion.HAPPY]
 };
 
 export const LONELY = {
   id: 16,
-  name: Emotions.LONELY,
+  name: Emotion.LONELY,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.LONELY, Emotions.SAD]
+  groups: [Emotion.LONELY, Emotion.SAD]
 };
 
 export const VULNERABLE = {
   id: 17,
-  name: Emotions.VULNERABLE,
+  name: Emotion.VULNERABLE,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.VULNERABLE, Emotions.SAD]
+  groups: [Emotion.VULNERABLE, Emotion.SAD]
 };
 
 export const DESPAIR = {
   id: 18,
-  name: Emotions.DESPAIR,
+  name: Emotion.DESPAIR,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.SAD, Emotions.DESPAIR]
+  groups: [Emotion.SAD, Emotion.DESPAIR]
 };
 
 export const GUILTY = {
   id: 19,
-  name: Emotions.GUILTY,
+  name: Emotion.GUILTY,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.SAD, Emotions.GUILTY]
+  groups: [Emotion.SAD, Emotion.GUILTY]
 };
 
 export const DEPRESSED = {
   id: 20,
-  name: Emotions.DEPRESSED,
+  name: Emotion.DEPRESSED,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.SAD, Emotions.DEPRESSED]
+  groups: [Emotion.SAD, Emotion.DEPRESSED]
 };
 
 export const HURT = {
   id: 21,
-  name: Emotions.HURT,
+  name: Emotion.HURT,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.HURT, Emotions.SAD]
+  groups: [Emotion.HURT, Emotion.SAD]
 };
 
 export const DISAPPOINTED_DISGUSTED = {
   id: 22,
-  name: Emotions.DISAPPOINTED,
+  name: Emotion.DISAPPOINTED,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.DISGUSTED, Emotions.DISAPPOINTED]
+  groups: [Emotion.DISGUSTED, Emotion.DISAPPOINTED]
 };
 
 export const AWFUL = {
   id: 23,
-  name: Emotions.AWFUL,
+  name: Emotion.AWFUL,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.DISGUSTED, Emotions.AWFUL]
+  groups: [Emotion.DISGUSTED, Emotion.AWFUL]
 };
 
 export const REPELLED = {
   id: 24,
-  name: Emotions.REPELLED,
+  name: Emotion.REPELLED,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.REPELLED, Emotions.DISGUSTED]
+  groups: [Emotion.REPELLED, Emotion.DISGUSTED]
 };
 
 export const LET_DOWN = {
   id: 25,
-  name: Emotions.LET_DOWN,
+  name: Emotion.LET_DOWN,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.ANGRY, Emotions.LET_DOWN]
+  groups: [Emotion.ANGRY, Emotion.LET_DOWN]
 };
 
 export const HUMILIATED = {
   id: 26,
-  name: Emotions.HUMILIATED,
+  name: Emotion.HUMILIATED,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.ANGRY, Emotions.HUMILIATED]
+  groups: [Emotion.ANGRY, Emotion.HUMILIATED]
 };
 
 export const BITTER = {
   id: 27,
-  name: Emotions.BITTER,
+  name: Emotion.BITTER,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.ANGRY, Emotions.BITTER]
+  groups: [Emotion.ANGRY, Emotion.BITTER]
 };
 
 export const MAD = {
   id: 28,
-  name: Emotions.MAD,
+  name: Emotion.MAD,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.MAD, Emotions.ANGRY]
+  groups: [Emotion.MAD, Emotion.ANGRY]
 };
 
 export const AGGRESSIVE = {
   id: 29,
-  name: Emotions.AGGRESSIVE,
+  name: Emotion.AGGRESSIVE,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.AGGRESSIVE, Emotions.ANGRY]
+  groups: [Emotion.AGGRESSIVE, Emotion.ANGRY]
 };
 
 export const FRUSTRATED = {
   id: 30,
-  name: Emotions.FRUSTRATED,
+  name: Emotion.FRUSTRATED,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.ANGRY, Emotions.FRUSTRATED]
+  groups: [Emotion.ANGRY, Emotion.FRUSTRATED]
 };
 
 export const DISTANT = {
   id: 31,
-  name: Emotions.DISTANT,
+  name: Emotion.DISTANT,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.ANGRY, Emotions.DISTANT]
+  groups: [Emotion.ANGRY, Emotion.DISTANT]
 };
 
 export const CRITICAL = {
   id: 32,
-  name: Emotions.CRITICAL,
+  name: Emotion.CRITICAL,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.CRITICAL, Emotions.ANGRY]
+  groups: [Emotion.CRITICAL, Emotion.ANGRY]
 };
 
 export const FRIGHTENED = {
   id: 33,
-  name: Emotions.FRIGHTENED,
+  name: Emotion.FRIGHTENED,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.FEARFUL, Emotions.FRIGHTENED]
+  groups: [Emotion.FEARFUL, Emotion.FRIGHTENED]
 };
 
 export const ANXIOUS = {
   id: 34,
-  name: Emotions.ANXIOUS,
+  name: Emotion.ANXIOUS,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.ANXIOUS, Emotions.FEARFUL]
+  groups: [Emotion.ANXIOUS, Emotion.FEARFUL]
 };
 
 export const INSECURE = {
   id: 35,
-  name: Emotions.INSECURE,
+  name: Emotion.INSECURE,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.FEARFUL, Emotions.INSECURE]
+  groups: [Emotion.FEARFUL, Emotion.INSECURE]
 };
 
 export const WEAK = {
   id: 36,
-  name: Emotions.WEAK,
+  name: Emotion.WEAK,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.FEARFUL, Emotions.WEAK]
+  groups: [Emotion.FEARFUL, Emotion.WEAK]
 };
 
 export const REJECTED = {
   id: 37,
-  name: Emotions.REJECTED,
+  name: Emotion.REJECTED,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.FEARFUL, Emotions.REJECTED]
+  groups: [Emotion.FEARFUL, Emotion.REJECTED]
 };
 
 export const THREATENED = {
   id: 38,
-  name: Emotions.THREATENED,
+  name: Emotion.THREATENED,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.FEARFUL, Emotions.THREATENED]
+  groups: [Emotion.FEARFUL, Emotion.THREATENED]
 };
 
 export const BORED = {
   id: 39,
-  name: Emotions.BORED,
+  name: Emotion.BORED,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.BORED, Emotions.BAD]
+  groups: [Emotion.BORED, Emotion.BAD]
 };
 
 export const BUSY = {
   id: 40,
-  name: Emotions.BUSY,
+  name: Emotion.BUSY,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.BUSY, Emotions.BAD]
+  groups: [Emotion.BUSY, Emotion.BAD]
 };
 
 export const STRESSED = {
   id: 41,
-  name: Emotions.STRESSED,
+  name: Emotion.STRESSED,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.STRESSED, Emotions.BAD]
+  groups: [Emotion.STRESSED, Emotion.BAD]
 };
 
 export const TIRED = {
   id: 42,
-  name: Emotions.TIRED,
+  name: Emotion.TIRED,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.TIRED, Emotions.BAD]
+  groups: [Emotion.TIRED, Emotion.BAD]
 };
 
 export const STARTLED = {
   id: 43,
-  name: Emotions.STARTLED,
+  name: Emotion.STARTLED,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.SURPRISED, Emotions.STARTLED]
+  groups: [Emotion.SURPRISED, Emotion.STARTLED]
 };
 
 export const CONFUSED = {
   id: 44,
-  name: Emotions.CONFUSED,
+  name: Emotion.CONFUSED,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.SURPRISED, Emotions.CONFUSED]
+  groups: [Emotion.SURPRISED, Emotion.CONFUSED]
 };
 
 export const AMAZED = {
   id: 45,
-  name: Emotions.AMAZED,
+  name: Emotion.AMAZED,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.SURPRISED, Emotions.AMAZED]
+  groups: [Emotion.SURPRISED, Emotion.AMAZED]
 };
 
 export const EXCITED = {
   id: 46,
-  name: Emotions.EXCITED,
+  name: Emotion.EXCITED,
   specificity: Specificity.SPECIFIC,
-  groups: [Emotions.SURPRISED, Emotions.EXCITED]
+  groups: [Emotion.SURPRISED, Emotion.EXCITED]
 };
 
 export const AROUSED = {
   id: 47,
-  name: Emotions.AROUSED,
+  name: Emotion.AROUSED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.HAPPY, Emotions.PLAYFUL]
+  groups: [Emotion.HAPPY, Emotion.PLAYFUL]
 };
 
 export const CHEEKY = {
   id: 48,
-  name: Emotions.CHEEKY,
+  name: Emotion.CHEEKY,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.HAPPY, Emotions.PLAYFUL]
+  groups: [Emotion.HAPPY, Emotion.PLAYFUL]
 };
 
 export const FREE = {
   id: 49,
-  name: Emotions.FREE,
+  name: Emotion.FREE,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.HAPPY, Emotions.CONTENT]
+  groups: [Emotion.HAPPY, Emotion.CONTENT]
 };
 
 export const JOYFUL = {
   id: 50,
-  name: Emotions.JOYFUL,
+  name: Emotion.JOYFUL,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.HAPPY, Emotions.CONTENT]
+  groups: [Emotion.HAPPY, Emotion.CONTENT]
 };
 
 export const CURIOUS = {
   id: 51,
-  name: Emotions.CURIOUS,
+  name: Emotion.CURIOUS,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.INTERESTED, Emotions.HAPPY]
+  groups: [Emotion.INTERESTED, Emotion.HAPPY]
 };
 
 export const INQUISITIVE = {
   id: 52,
-  name: Emotions.INQUISITIVE,
+  name: Emotion.INQUISITIVE,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.INTERESTED, Emotions.HAPPY]
+  groups: [Emotion.INTERESTED, Emotion.HAPPY]
 };
 
 export const SUCCESSFUL = {
   id: 53,
-  name: Emotions.SUCCESSFUL,
+  name: Emotion.SUCCESSFUL,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.HAPPY, Emotions.PROUD]
+  groups: [Emotion.HAPPY, Emotion.PROUD]
 };
 
 export const CONFIDENT = {
   id: 54,
-  name: Emotions.CONFIDENT,
+  name: Emotion.CONFIDENT,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.HAPPY, Emotions.PROUD]
+  groups: [Emotion.HAPPY, Emotion.PROUD]
 };
 
 export const RESPECTED = {
   id: 55,
-  name: Emotions.RESPECTED,
+  name: Emotion.RESPECTED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.ACCEPTED, Emotions.HAPPY]
+  groups: [Emotion.ACCEPTED, Emotion.HAPPY]
 };
 
 export const VALUED = {
   id: 56,
-  name: Emotions.VALUED,
+  name: Emotion.VALUED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.ACCEPTED, Emotions.HAPPY]
+  groups: [Emotion.ACCEPTED, Emotion.HAPPY]
 };
 
 export const COURAGEOUS = {
   id: 57,
-  name: Emotions.COURAGEOUS,
+  name: Emotion.COURAGEOUS,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.HAPPY, Emotions.POWERFUL]
+  groups: [Emotion.HAPPY, Emotion.POWERFUL]
 };
 
 export const CREATIVE = {
   id: 58,
-  name: Emotions.CREATIVE,
+  name: Emotion.CREATIVE,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.HAPPY, Emotions.POWERFUL]
+  groups: [Emotion.HAPPY, Emotion.POWERFUL]
 };
 
 export const LOVING = {
   id: 59,
-  name: Emotions.LOVING,
+  name: Emotion.LOVING,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.HAPPY, Emotions.PEACEFUL]
+  groups: [Emotion.HAPPY, Emotion.PEACEFUL]
 };
 
 export const THANKFUL = {
   id: 60,
-  name: Emotions.THANKFUL,
+  name: Emotion.THANKFUL,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.HAPPY, Emotions.PEACEFUL]
+  groups: [Emotion.HAPPY, Emotion.PEACEFUL]
 };
 
 export const SENSITIVE = {
   id: 61,
-  name: Emotions.SENSITIVE,
+  name: Emotion.SENSITIVE,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.HAPPY, Emotions.TRUSTING]
+  groups: [Emotion.HAPPY, Emotion.TRUSTING]
 };
 
 export const INTIMATE = {
   id: 62,
-  name: Emotions.INTIMATE,
+  name: Emotion.INTIMATE,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.HAPPY, Emotions.TRUSTING]
+  groups: [Emotion.HAPPY, Emotion.TRUSTING]
 };
 
 export const HOPEFUL = {
   id: 63,
-  name: Emotions.HOPEFUL,
+  name: Emotion.HOPEFUL,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.OPTIMISTIC, Emotions.HAPPY]
+  groups: [Emotion.OPTIMISTIC, Emotion.HAPPY]
 };
 
 export const INSPIRED = {
   id: 64,
-  name: Emotions.INSPIRED,
+  name: Emotion.INSPIRED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.OPTIMISTIC, Emotions.HAPPY]
+  groups: [Emotion.OPTIMISTIC, Emotion.HAPPY]
 };
 
 export const ISOLATED = {
   id: 65,
-  name: Emotions.ISOLATED,
+  name: Emotion.ISOLATED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.LONELY, Emotions.SAD]
+  groups: [Emotion.LONELY, Emotion.SAD]
 };
 
 export const ABANDONED = {
   id: 66,
-  name: Emotions.ABANDONED,
+  name: Emotion.ABANDONED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.LONELY, Emotions.SAD]
+  groups: [Emotion.LONELY, Emotion.SAD]
 };
 
 export const VICTIMISED = {
   id: 67,
-  name: Emotions.VICTIMISED,
+  name: Emotion.VICTIMISED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.VULNERABLE, Emotions.SAD]
+  groups: [Emotion.VULNERABLE, Emotion.SAD]
 };
 
 export const FRAGILE = {
   id: 68,
-  name: Emotions.FRAGILE,
+  name: Emotion.FRAGILE,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.VULNERABLE, Emotions.SAD]
+  groups: [Emotion.VULNERABLE, Emotion.SAD]
 };
 
 export const GRIEF = {
   id: 69,
-  name: Emotions.GRIEF,
+  name: Emotion.GRIEF,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.SAD, Emotions.DESPAIR]
+  groups: [Emotion.SAD, Emotion.DESPAIR]
 };
 
 export const POWERLESS = {
   id: 70,
-  name: Emotions.POWERLESS,
+  name: Emotion.POWERLESS,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.SAD, Emotions.DESPAIR]
+  groups: [Emotion.SAD, Emotion.DESPAIR]
 };
 
 export const ASHAMED = {
   id: 71,
-  name: Emotions.ASHAMED,
+  name: Emotion.ASHAMED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.SAD, Emotions.GUILTY]
+  groups: [Emotion.SAD, Emotion.GUILTY]
 };
 
 export const REMORSEFUL = {
   id: 72,
-  name: Emotions.REMORSEFUL,
+  name: Emotion.REMORSEFUL,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.SAD, Emotions.GUILTY]
+  groups: [Emotion.SAD, Emotion.GUILTY]
 };
 
 export const INFERIOR_SAD = {
   id: 73,
-  name: Emotions.INFERIOR,
+  name: Emotion.INFERIOR,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.SAD, Emotions.DEPRESSED]
+  groups: [Emotion.SAD, Emotion.DEPRESSED]
 };
 
 export const EMPTY = {
   id: 74,
-  name: Emotions.EMPTY,
+  name: Emotion.EMPTY,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.SAD, Emotions.DEPRESSED]
+  groups: [Emotion.SAD, Emotion.DEPRESSED]
 };
 
 export const EMBARRASSED_SAD = {
   id: 75,
-  name: Emotions.EMBARRASSED,
+  name: Emotion.EMBARRASSED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.HURT, Emotions.SAD]
+  groups: [Emotion.HURT, Emotion.SAD]
 };
 
 export const DISAPPOINTED_SAD = {
   id: 76,
-  name: Emotions.DISAPPOINTED,
+  name: Emotion.DISAPPOINTED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.HURT, Emotions.SAD]
+  groups: [Emotion.HURT, Emotion.SAD]
 };
 
 export const JUDGEMENTAL = {
   id: 77,
-  name: Emotions.JUDGEMENTAL,
+  name: Emotion.JUDGEMENTAL,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.DISGUSTED, Emotions.DISAPPROVING]
+  groups: [Emotion.DISGUSTED, Emotion.DISAPPROVING]
 };
 
 export const EMBARRASSED_DISGUSTED = {
   id: 78,
-  name: Emotions.EMBARRASSED,
+  name: Emotion.EMBARRASSED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.DISGUSTED, Emotions.DISAPPROVING]
+  groups: [Emotion.DISGUSTED, Emotion.DISAPPROVING]
 };
 
 export const APALLED = {
   id: 79,
-  name: Emotions.APALLED,
+  name: Emotion.APALLED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.DISGUSTED, Emotions.DISAPPOINTED]
+  groups: [Emotion.DISGUSTED, Emotion.DISAPPOINTED]
 };
 
 export const REVOLTED = {
   id: 80,
-  name: Emotions.REVOLTED,
+  name: Emotion.REVOLTED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.DISGUSTED, Emotions.DISAPPOINTED]
+  groups: [Emotion.DISGUSTED, Emotion.DISAPPOINTED]
 };
 
 export const NAUSEATED = {
   id: 81,
-  name: Emotions.NAUSEATED,
+  name: Emotion.NAUSEATED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.DISGUSTED, Emotions.AWFUL]
+  groups: [Emotion.DISGUSTED, Emotion.AWFUL]
 };
 
 export const DETESTABLE = {
   id: 82,
-  name: Emotions.DETESTABLE,
+  name: Emotion.DETESTABLE,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.DISGUSTED, Emotions.AWFUL]
+  groups: [Emotion.DISGUSTED, Emotion.AWFUL]
 };
 
 export const HORRIFIED = {
   id: 83,
-  name: Emotions.HORRIFIED,
+  name: Emotion.HORRIFIED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.REPELLED, Emotions.DISGUSTED]
+  groups: [Emotion.REPELLED, Emotion.DISGUSTED]
 };
 
 export const HESITANT = {
   id: 84,
-  name: Emotions.HESITANT,
+  name: Emotion.HESITANT,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.REPELLED, Emotions.DISGUSTED]
+  groups: [Emotion.REPELLED, Emotion.DISGUSTED]
 };
 
 export const BETRAYED = {
   id: 85,
-  name: Emotions.BETRAYED,
+  name: Emotion.BETRAYED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.ANGRY, Emotions.LET_DOWN]
+  groups: [Emotion.ANGRY, Emotion.LET_DOWN]
 };
 
 export const RESENTFUL = {
   id: 86,
-  name: Emotions.RESENTFUL,
+  name: Emotion.RESENTFUL,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.ANGRY, Emotions.LET_DOWN]
+  groups: [Emotion.ANGRY, Emotion.LET_DOWN]
 };
 
 export const DISRESPECTED = {
   id: 87,
-  name: Emotions.DISRESPECTED,
+  name: Emotion.DISRESPECTED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.ANGRY, Emotions.HUMILIATED]
+  groups: [Emotion.ANGRY, Emotion.HUMILIATED]
 };
 
 export const RIDICULED = {
   id: 88,
-  name: Emotions.RIDICULED,
+  name: Emotion.RIDICULED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.ANGRY, Emotions.HUMILIATED]
+  groups: [Emotion.ANGRY, Emotion.HUMILIATED]
 };
 
 export const INDIGNANT = {
   id: 89,
-  name: Emotions.INDIGNANT,
+  name: Emotion.INDIGNANT,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.ANGRY, Emotions.BITTER]
+  groups: [Emotion.ANGRY, Emotion.BITTER]
 };
 
 export const VIOLATED = {
   id: 90,
-  name: Emotions.VIOLATED,
+  name: Emotion.VIOLATED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.ANGRY, Emotions.BITTER]
+  groups: [Emotion.ANGRY, Emotion.BITTER]
 };
 
 export const FURIOUS = {
   id: 91,
-  name: Emotions.FURIOUS,
+  name: Emotion.FURIOUS,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.MAD, Emotions.ANGRY]
+  groups: [Emotion.MAD, Emotion.ANGRY]
 };
 
 export const JEALOUSY = {
   id: 92,
-  name: Emotions.JEALOUSY,
+  name: Emotion.JEALOUSY,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.MAD, Emotions.ANGRY]
+  groups: [Emotion.MAD, Emotion.ANGRY]
 };
 
 export const PROVOKED = {
   id: 93,
-  name: Emotions.PROVOKED,
+  name: Emotion.PROVOKED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.AGGRESSIVE, Emotions.ANGRY]
+  groups: [Emotion.AGGRESSIVE, Emotion.ANGRY]
 };
 
 export const HOSTILE = {
   id: 94,
-  name: Emotions.HOSTILE,
+  name: Emotion.HOSTILE,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.AGGRESSIVE, Emotions.ANGRY]
+  groups: [Emotion.AGGRESSIVE, Emotion.ANGRY]
 };
 
 export const INFURIATED = {
   id: 95,
-  name: Emotions.INFURIATED,
+  name: Emotion.INFURIATED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.ANGRY, Emotions.FRUSTRATED]
+  groups: [Emotion.ANGRY, Emotion.FRUSTRATED]
 };
 
 export const ANNOYED = {
   id: 96,
-  name: Emotions.ANNOYED,
+  name: Emotion.ANNOYED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.ANGRY, Emotions.FRUSTRATED]
+  groups: [Emotion.ANGRY, Emotion.FRUSTRATED]
 };
 
 export const WITHDRAWN = {
   id: 97,
-  name: Emotions.WITHDRAWN,
+  name: Emotion.WITHDRAWN,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.ANGRY, Emotions.DISTANT]
+  groups: [Emotion.ANGRY, Emotion.DISTANT]
 };
 
 export const NUMB = {
   id: 98,
-  name: Emotions.NUMB,
+  name: Emotion.NUMB,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.ANGRY, Emotions.DISTANT]
+  groups: [Emotion.ANGRY, Emotion.DISTANT]
 };
 
 export const SCEPTICAL = {
   id: 99,
-  name: Emotions.SCEPTICAL,
+  name: Emotion.SCEPTICAL,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.CRITICAL, Emotions.ANGRY]
+  groups: [Emotion.CRITICAL, Emotion.ANGRY]
 };
 
 export const DISMISSIVE = {
   id: 100,
-  name: Emotions.DISMISSIVE,
+  name: Emotion.DISMISSIVE,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.CRITICAL, Emotions.ANGRY]
+  groups: [Emotion.CRITICAL, Emotion.ANGRY]
 };
 
 export const SCARED = {
   id: 101,
-  name: Emotions.SCARED,
+  name: Emotion.SCARED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.FEARFUL, Emotions.FRIGHTENED]
+  groups: [Emotion.FEARFUL, Emotion.FRIGHTENED]
 };
 
 export const HELPLESS = {
   id: 102,
-  name: Emotions.HELPLESS,
+  name: Emotion.HELPLESS,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.FEARFUL, Emotions.FRIGHTENED]
+  groups: [Emotion.FEARFUL, Emotion.FRIGHTENED]
 };
 
 export const OVERWHELMED_FEARFUL = {
   id: 103,
-  name: Emotions.OVERWHELMED,
+  name: Emotion.OVERWHELMED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.ANXIOUS, Emotions.FEARFUL]
+  groups: [Emotion.ANXIOUS, Emotion.FEARFUL]
 };
 
 export const WORRIED = {
   id: 104,
-  name: Emotions.WORRIED,
+  name: Emotion.WORRIED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.ANXIOUS, Emotions.FEARFUL]
+  groups: [Emotion.ANXIOUS, Emotion.FEARFUL]
 };
 
 export const INADEQUATE = {
   id: 105,
-  name: Emotions.INADEQUATE,
+  name: Emotion.INADEQUATE,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.FEARFUL, Emotions.INSECURE]
+  groups: [Emotion.FEARFUL, Emotion.INSECURE]
 };
 
 export const INFERIOR_FEARFUL = {
   id: 106,
-  name: Emotions.INFERIOR,
+  name: Emotion.INFERIOR,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.FEARFUL, Emotions.INSECURE]
+  groups: [Emotion.FEARFUL, Emotion.INSECURE]
 };
 
 export const WORTHLESS = {
   id: 107,
-  name: Emotions.WORTHLESS,
+  name: Emotion.WORTHLESS,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.FEARFUL, Emotions.WEAK]
+  groups: [Emotion.FEARFUL, Emotion.WEAK]
 };
 
 export const INSIGNIFICANT = {
   id: 108,
-  name: Emotions.INSIGNIFICANT,
+  name: Emotion.INSIGNIFICANT,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.FEARFUL, Emotions.WEAK]
+  groups: [Emotion.FEARFUL, Emotion.WEAK]
 };
 
 export const EXCLUDED = {
   id: 109,
-  name: Emotions.EXCLUDED,
+  name: Emotion.EXCLUDED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.FEARFUL, Emotions.REJECTED]
+  groups: [Emotion.FEARFUL, Emotion.REJECTED]
 };
 
 export const PERSECUTED = {
   id: 110,
-  name: Emotions.PERSECUTED,
+  name: Emotion.PERSECUTED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.FEARFUL, Emotions.REJECTED]
+  groups: [Emotion.FEARFUL, Emotion.REJECTED]
 };
 
 export const NERVOUS = {
   id: 111,
-  name: Emotions.NERVOUS,
+  name: Emotion.NERVOUS,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.FEARFUL, Emotions.THREATENED]
+  groups: [Emotion.FEARFUL, Emotion.THREATENED]
 };
 
 export const EXPOSED = {
   id: 112,
-  name: Emotions.EXPOSED,
+  name: Emotion.EXPOSED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.FEARFUL, Emotions.THREATENED]
+  groups: [Emotion.FEARFUL, Emotion.THREATENED]
 };
 
 export const INDIFFERENT = {
   id: 113,
-  name: Emotions.INDIFFERENT,
+  name: Emotion.INDIFFERENT,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.BORED, Emotions.BAD]
+  groups: [Emotion.BORED, Emotion.BAD]
 };
 
 export const APATHETIC = {
   id: 114,
-  name: Emotions.APATHETIC,
+  name: Emotion.APATHETIC,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.BORED, Emotions.BAD]
+  groups: [Emotion.BORED, Emotion.BAD]
 };
 
 export const PRESSURED = {
   id: 115,
-  name: Emotions.PRESSURED,
+  name: Emotion.PRESSURED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.BUSY, Emotions.BAD]
+  groups: [Emotion.BUSY, Emotion.BAD]
 };
 
 export const RUSHED = {
   id: 116,
-  name: Emotions.RUSHED,
+  name: Emotion.RUSHED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.BUSY, Emotions.BAD]
+  groups: [Emotion.BUSY, Emotion.BAD]
 };
 
 export const OVERWHELMED_BAD = {
   id: 117,
-  name: Emotions.OVERWHELMED,
+  name: Emotion.OVERWHELMED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.STRESSED, Emotions.BAD]
+  groups: [Emotion.STRESSED, Emotion.BAD]
 };
 
 export const OUT_OF_CONTROL = {
   id: 118,
-  name: Emotions.OUT_OF_CONTROL,
+  name: Emotion.OUT_OF_CONTROL,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.STRESSED, Emotions.BAD]
+  groups: [Emotion.STRESSED, Emotion.BAD]
 };
 
 export const SLEEPY = {
   id: 119,
-  name: Emotions.SLEEPY,
+  name: Emotion.SLEEPY,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.TIRED, Emotions.BAD]
+  groups: [Emotion.TIRED, Emotion.BAD]
 };
 
 export const UNFOCUSED = {
   id: 120,
-  name: Emotions.UNFOCUSED,
+  name: Emotion.UNFOCUSED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.TIRED, Emotions.BAD]
+  groups: [Emotion.TIRED, Emotion.BAD]
 };
 
 export const SHOCKED = {
   id: 121,
-  name: Emotions.SHOCKED,
+  name: Emotion.SHOCKED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.SURPRISED, Emotions.STARTLED]
+  groups: [Emotion.SURPRISED, Emotion.STARTLED]
 };
 
 export const DISMAYED = {
   id: 122,
-  name: Emotions.DISMAYED,
+  name: Emotion.DISMAYED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.SURPRISED, Emotions.STARTLED]
+  groups: [Emotion.SURPRISED, Emotion.STARTLED]
 };
 
 export const DISILLUSIONED = {
   id: 123,
-  name: Emotions.DISILLUSIONED,
+  name: Emotion.DISILLUSIONED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.SURPRISED, Emotions.CONFUSED]
+  groups: [Emotion.SURPRISED, Emotion.CONFUSED]
 };
 
 export const PERPLEXED = {
   id: 124,
-  name: Emotions.PERPLEXED,
+  name: Emotion.PERPLEXED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.SURPRISED, Emotions.CONFUSED]
+  groups: [Emotion.SURPRISED, Emotion.CONFUSED]
 };
 
 export const ASTONISHED = {
   id: 125,
-  name: Emotions.ASTONISHED,
+  name: Emotion.ASTONISHED,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.SURPRISED, Emotions.AMAZED]
+  groups: [Emotion.SURPRISED, Emotion.AMAZED]
 };
 
 export const AWE = {
   id: 126,
-  name: Emotions.AWE,
+  name: Emotion.AWE,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.SURPRISED, Emotions.AMAZED]
+  groups: [Emotion.SURPRISED, Emotion.AMAZED]
 };
 
 export const EAGER = {
   id: 127,
-  name: Emotions.EAGER,
+  name: Emotion.EAGER,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.SURPRISED, Emotions.EXCITED]
+  groups: [Emotion.SURPRISED, Emotion.EXCITED]
 };
 
 export const ENERGETIC = {
   id: 128,
-  name: Emotions.ENERGETIC,
+  name: Emotion.ENERGETIC,
   specificity: Specificity.FINE_GRAINED,
-  groups: [Emotions.SURPRISED, Emotions.EXCITED]
+  groups: [Emotion.SURPRISED, Emotion.EXCITED]
 };
 
 export const EMOTION_WHEEL = [

@@ -1,17 +1,17 @@
-import { Emotions, Specificity } from '../enums';
+import { Emotion, Specificity } from '../enums';
 
-export interface Emotion {
+export interface EmotionData {
   /**
    * Unique identifier of the emotion.
    * 
    * Note: This is needed as there are some emotions
    * that are named the same but belong to different core group.
    */
-  id: number,
+  id: number | string,
   /**
    * The emotion identified by the user in the form.
    */
-  name: Emotions,
+  name: Emotion,
   /** 
    * Identifies which level the named emotion is
    * on the emotion wheel. The more specific the
@@ -25,5 +25,5 @@ export interface Emotion {
    * All core emotions are group of their own.
    * @example happy has groups: [ happy ]
    */
-  groups: Emotions[]
+  groups: Emotion[]
 }

@@ -1,0 +1,25 @@
+<mat-card class="record-card">
+  <mat-card-header>
+    <mat-card-title 
+      class="record-card__title"
+      [matTooltip]="thoughtRecordUi.title"
+      [matTooltipDisabled]="thoughtRecordUi.title.length < RECORD_CARD_TITLE"
+      matTooltipPosition="above">
+      {{ thoughtRecordUi.title| textOverflow: RECORD_CARD_TITLE }}
+    </mat-card-title>
+  </mat-card-header>
+  
+  <mat-card-content class="record-card__content">
+    <mat-chip-set>
+      <ng-container *ngFor="let emotionRecord of thoughtRecordUi.emotionsUi;">
+        <mat-chip 
+          [appEmotionBg]="emotionRecord.coreGroup +''"
+          [matTooltip]="thoughtRecordUi.hiddenEmotions"
+          [matTooltipDisabled]="emotionRecord.id !== 'and-more'">
+          {{ emotionRecord.displayName }}
+        </mat-chip>
+      </ng-container>
+    </mat-chip-set>
+  </mat-card-content>  
+</mat-card>
+  
