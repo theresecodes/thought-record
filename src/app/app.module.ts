@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
+import { MaterialModule } from './material.module';
 import { RecordsModule } from './records/records.module';
 
 @NgModule({
@@ -10,7 +12,9 @@ import { RecordsModule } from './records/records.module';
   ],
   imports: [
     BrowserModule,
-    RecordsModule
+    BrowserAnimationsModule,
+    RecordsModule,
+    MaterialModule
   ],
   bootstrap: [AppComponent]
 })
