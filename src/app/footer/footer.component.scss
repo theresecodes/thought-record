@@ -1,0 +1,17 @@
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.grey {
+  color: #808080;
+}
+
+.link {
+  text-decoration: none;
+
+   &:hover {
+    color: rgba(0, 0, 0, 0.87);
+   }
+}

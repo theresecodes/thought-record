@@ -1,8 +1,23 @@
 .records-container {
-  width: 80%;
+  width: 100%;
+  min-height: 20rem;
+  max-height: 29.9rem;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1em;
+  gap: 1em; 
+  overflow: scroll;
+  padding-bottom: 1rem;
+}
+
+.no-records {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.light-grey-bg {
+  background-color: #FAFAFA;
 }

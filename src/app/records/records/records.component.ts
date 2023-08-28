@@ -145,7 +145,31 @@ export class RecordsComponent implements OnInit {
         date: new Date(),
         situation: 'jdkfjdkfdf',
         thoughts: 'jdkfjdkfj'
+      },
+      {
+        title: 'kldskjfk df ',
+        id: '9014',
+        emotionRecords: [playful, free],
+        date: new Date(),
+        situation: 'jdkfjdkfdf',
+        thoughts: 'jdkfjdkfj'
+      },
+      {
+        title: 'llajdfk ajkdf',
+        id: '7671',
+        emotionRecords: [courageous, playful],
+        date: new Date(),
+        situation: 'jdkfjdkfdf',
+        thoughts: 'jdkfjdkfj'
+      },
+      {
+        title: 'pladye ff',
+        id: '7814',
+        emotionRecords: [playful, free],
+        date: new Date(),
+        situation: 'jdkfjdkfdf',
+        thoughts: 'jdkfjdkfj'
       }
-    ]
+    ];
   }
 }
