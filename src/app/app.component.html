@@ -1,3 +1,17 @@
-<h1>{{ title }}</h1>
+<div class="landing-page">
+  <h1 class="app-title mat-headline-4">{{ title }}</h1>
+  <div class="app-features">
+    <ng-container *ngFor="let feature of features; let last = last">
+      <button
+        mat-button
+        (click)="openDialog()">
+        {{ feature }}
+      </button>
+    </ng-container>
+    
+  </div>
+  
+  <app-records class="records"></app-records>
 
-<app-records></app-records>
+  <app-footer class="footer"></app-footer>
+</div>  

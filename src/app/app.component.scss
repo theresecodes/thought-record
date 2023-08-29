@@ -1,0 +1,33 @@
+.landing-page {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.app{
+  &-title{
+    margin: 3rem auto 0.5rem auto;  
+  } 
+
+  &-features{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+}
+
+.records {
+  width: 80%;
+  margin: auto;
+  min-height: 20rem;
+  border-radius: 1.5rem;
+  background: white;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
