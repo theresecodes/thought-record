@@ -19,4 +19,5 @@ export class ViewRecordComponent {
       intensity: 0.70
     },
   ];
+  situation = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto deleniti rem distinctio, numquam impedit tempore, dolore nobis omnis accusantium beatae soluta. Magnam molestiae nihil repudiandae maxime facilis delectus est id.';
 }
