@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
-import { CoreEmotions } from 'src/app/core/constants/core-emotions.constant';
-import { Emotion } from 'src/app/core/enums';
 import { ThoughtRecord } from 'src/app/core/models';
-import { CoreEmotionsType } from 'src/app/core/models/core-emotions.type';
 import { EmotionRecord } from 'src/app/core/models/emotion-record.interface';
 import { EmotionUI } from 'src/app/core/models/emotion-ui.interface';
 import { ThoughtRecordUi } from 'src/app/core/models/thought-record-ui.interface';
 
 import { EmotionUiDetails } from '../models/emotion-ui-details.model';
+import { getCoreGroup } from '../utils';
+
 
 @Injectable({
   providedIn: 'root'
@@ -60,7 +59,7 @@ export class ThoughtRecordThoughtRecordUiMapperService {
         const emotionUi = {
           displayName: emotionRecord.emotion.name ?? '',
           id: emotionRecord.emotion.id.toString(),
-          coreGroup: this.getCoreGroup(emotionRecord.emotion.groups),
+          coreGroup: getCoreGroup(emotionRecord.emotion.groups),
         }
         emotionsForDisplay.push(emotionUi);
       } else {
@@ -85,14 +84,5 @@ export class ThoughtRecordThoughtRecordUiMapperService {
 
   private sortByIntensity(emotionRecords: EmotionRecord[]): EmotionRecord[] {
     return [...emotionRecords]?.sort((a, b) => a.intensity - b.intensity).reverse()
-  }
-
-  /**
-   * Gets the first emotion that belongs to the core emotions group.
-   * @param emotionRecords array of emotion
-   * @returns one of the group group emotion @see CoreEmotions
-   */
-  private getCoreGroup(emotionRecords: Emotion[]): CoreEmotionsType {
-    return emotionRecords.find(emotion => CoreEmotions.includes(emotion)) as CoreEmotionsType;
   }
 }

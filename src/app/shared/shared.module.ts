@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialModule } from '../material.module';
 import { EmotionBgDirective } from './emotion-bg.directive';
@@ -17,7 +16,6 @@ import { TextOverflowPipe } from './text-overflow.pipe';
   ],
   imports: [
     CommonModule,
-    BrowserAnimationsModule,
     MaterialModule
   ],
   exports: [TextOverflowPipe, EmotionBgDirective, InfoDialogComponent]

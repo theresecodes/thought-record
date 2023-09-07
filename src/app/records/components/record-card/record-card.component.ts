@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ThoughtRecord } from 'src/app/core/models';
 import { ThoughtRecordUi } from 'src/app/core/models/thought-record-ui.interface';
 
-import { ThoughtRecordThoughtRecordUiMapperService } from '../services/thought-record-thought-record-ui-mapper.service';
+import { ThoughtRecordThoughtRecordUiMapperService } from '../../services/thought-record-thought-record-ui-mapper.service';
 import { RECORD_CARD_TITLE } from './record-card-title.constant';
 
 

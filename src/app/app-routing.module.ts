@@ -1,12 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { AppComponent } from './app.component';
+import { RecordsPageComponent } from './records/components/records-page/records-page.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: AppComponent
+    component: RecordsPageComponent,
+    children: [
+      {
+        path: '',
+        redirectTo: 'records',
+        pathMatch: 'full'
+      },
+      {
+        path: 'records',
+        loadChildren: () => import('../app/records/records.module').then((m) => m.RecordsModule)
+      }
+    ]
   }
 ]
 

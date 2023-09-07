@@ -3,25 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { MaterialModule } from '../material.module';
 import { SharedModule } from '../shared/shared.module';
-import { AddRecordComponent } from './add-record/add-record.component';
-import { RecordCardComponent } from './record-card/record-card.component';
-import { RecordsComponent } from './records/records.component';
-import { ViewRecordComponent } from './view-record/view-record.component';
-
+import * as fromComponents from './components';
+import { RecordsRoutingModule } from './records-routing.module';
+import { CoreEmotionPipe } from './pipes/core-emotion.pipe';
+import { PercentagePipe } from './pipes/percentage.pipe';
 
 
 @NgModule({
   declarations: [
-    AddRecordComponent,
-    ViewRecordComponent,
-    RecordsComponent,
-    RecordCardComponent
+    ...fromComponents.components,
+    CoreEmotionPipe,
+    PercentagePipe
   ],
   imports: [
     CommonModule,
+    RecordsRoutingModule,
     MaterialModule,
     SharedModule
   ],
-  exports: [RecordsComponent]
+  exports: [
+    ...fromComponents.components
+  ]
 })
 export class RecordsModule { }

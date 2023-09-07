@@ -16,7 +16,9 @@
           [appEmotionBg]="emotionRecord.coreGroup +''"
           [matTooltip]="thoughtRecordUi.hiddenEmotions"
           [matTooltipDisabled]="emotionRecord.id !== 'and-more'">
-          {{ emotionRecord.displayName }}
+          <span [appEmotionBg]="emotionRecord.coreGroup +''">
+            {{ emotionRecord.displayName }}
+          </span>
         </mat-chip>
       </ng-container>
     </mat-chip-set>
