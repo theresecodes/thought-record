@@ -1,10 +1,10 @@
 <div class="records-container"
   [ngClass]="{'light-grey-bg': thoughtRecords.length }">
   <ng-container *ngIf="thoughtRecords?.length; else noRecords ">
-    <app-record-card
-      *ngFor="let record of thoughtRecords"
-      [thoughtRecord]="record">
-    </app-record-card>
+    <a *ngFor="let record of thoughtRecords"
+      routerLink="records/{{record.id}}">
+      <app-record-card [thoughtRecord]="record"></app-record-card>
+    </a>
   </ng-container>
   <ng-template #noRecords>
     <div class="no-records">

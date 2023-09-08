@@ -1,0 +1,13 @@
+<mat-chip 
+  [appEmotionBg]="emotionRecord.emotion.groups| coreEmotion"
+  class="container">
+  <span
+    [appEmotionBg]="emotionRecord.emotion.groups| coreEmotion">
+    {{ emotionRecord.emotion.name }}
+  </span>
+  <div 
+    class="emotion-intensity"
+    [appEmotionBg]="emotionRecord.emotion.groups| coreEmotion">
+    {{ emotionRecord.intensity | percentage }}
+  </div>
+</mat-chip>

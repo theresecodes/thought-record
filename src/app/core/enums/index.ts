@@ -1,2 +1,2 @@
-export * from './emotions.enum';
+export * from './emotion.enum';
 export * from './specificity.enum';

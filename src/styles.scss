@@ -5,6 +5,11 @@ body {
   background-color: #FAFAFA;
   height: 100%;
   width: 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 // Needs to have important to override angular material styling
@@ -21,6 +26,7 @@ body {
 // purple
 .SURPRISED {
   background-color: #A95C68 !important;
+  color: white;
 }
 
 // brownish
@@ -31,6 +37,7 @@ body {
 // reddish
 .ANGRY {
   background-color: #E35335 !important;
+  color: white;
 }
 
 // orange
