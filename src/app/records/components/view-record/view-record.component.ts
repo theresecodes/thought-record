@@ -30,7 +30,7 @@ export class ViewRecordComponent {
 
   constructor(private router: Router) { }
 
-  backToMainPage() {
+  goToMainPage() {
     this.router.navigateByUrl('/records');
   }
 }
