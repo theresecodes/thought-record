@@ -10,6 +10,14 @@ body {
 
 a {
   text-decoration: none;
+
+  &:-webkit-any-link {
+    color: rgba(0, 0, 0, 0.87);
+  }
+
+  &:-webkit-any-link:active {
+    color: green;
+  }
 }
 
 // Needs to have important to override angular material styling
