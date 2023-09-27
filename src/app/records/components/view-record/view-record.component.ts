@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { EAGER, PROUD } from 'src/app/core/constants/emotions-wheel.constant';
 import { EmotionRecord } from 'src/app/core/models';
 
@@ -9,6 +10,7 @@ import { EmotionRecord } from 'src/app/core/models';
 })
 export class ViewRecordComponent {
   routeUrl!: string;
+  title = 'this is a long title of a sample thought record. We are just checking if this is alright';
   emotionRecords: EmotionRecord[] = [
     {
       emotion: EAGER,
@@ -26,4 +28,9 @@ export class ViewRecordComponent {
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis leo est, tempor id tincidunt quis, venenatis dignissim enim. Nunc in facilisis enim. Nunc sagittis vestibulum porttitor. Fusce mattis, ex vitae aliquam feugiat, odio enim posuere libero, vitae accumsan augue sem quis ex. Donec interdum sollicitudin ex, non finibus quam. Quisque sem sapien, maximus consectetur elementum quis, dapibus sed neque. Praesent interdum erat ac accumsan commodo. Quisque augue purus, pulvinar non tempus a, blandit eu odio. Curabitur arcu mi, tristique ac risus non, consequat viverra enim. Etiam in lacinia nisi. Cras ut augue sodales ipsum porttitor egestas. Duis sit amet cursus nibh, ac commodo leo. Nunc vel dolor eu nunc tempor auctor.'
   ]
 
+  constructor(private router: Router) { }
+
+  goToMainPage() {
+    this.router.navigateByUrl('/records');
+  }
 }
