@@ -56,7 +56,7 @@ export class RecordsComponent implements OnInit {
         emotionRecords: [playful, free, courageous, outOfControl],
         date: new Date(),
         situation: 'jdkfjdkfdf',
-        thoughts: 'jdkfjdkfj'
+        thoughts: ['jdkfjdkfj']
       },
       {
         title: 'Consistent working on small bet by going to Starbucks every morning.',
@@ -64,7 +64,7 @@ export class RecordsComponent implements OnInit {
         emotionRecords: [sad, sad, mad],
         date: new Date(),
         situation: 'jdkfjdkfdf',
-        thoughts: 'jdkfjdkfj'
+        thoughts: ['jdkfjdkfj']
       },
       {
         title: 'ale fdjkeos the  quick brown fox jump over the lazy dog',
@@ -72,7 +72,7 @@ export class RecordsComponent implements OnInit {
         emotionRecords: [free, outOfControl, sad, mad],
         date: new Date(),
         situation: 'jdkfjdkfdf',
-        thoughts: 'jdkfjdkfj'
+        thoughts: ['jdkfjdkfj']
       },
       {
         title: 'klaejf ',
@@ -80,7 +80,7 @@ export class RecordsComponent implements OnInit {
         emotionRecords: [playful],
         date: new Date(),
         situation: 'jdkfjdkfdf',
-        thoughts: 'jdkfjdkfj'
+        thoughts: ['jdkfjdkfj']
       },
       {
         title: 'aeos ere',
@@ -88,7 +88,7 @@ export class RecordsComponent implements OnInit {
         emotionRecords: [courageous, playful, happy],
         date: new Date(),
         situation: 'jdkfjdkfdf',
-        thoughts: 'jdkfjdkfj'
+        thoughts: ['jdkfjdkfj']
       },
       {
         title: 'kldfafdf df ',
@@ -96,7 +96,7 @@ export class RecordsComponent implements OnInit {
         emotionRecords: [playful],
         date: new Date(),
         situation: 'jdkfjdkfdf',
-        thoughts: 'jdkfjdkfj'
+        thoughts: ['jdkfjdkfj']
       },
       {
         title: 'er qerer',
@@ -104,7 +104,7 @@ export class RecordsComponent implements OnInit {
         emotionRecords: [courageous, playful],
         date: new Date(),
         situation: 'jdkfjdkfdf',
-        thoughts: 'jdkfjdkfj'
+        thoughts: ['jdkfjdkfj']
       },
       {
         title: 'kldfa jdskjfk df ',
@@ -112,7 +112,7 @@ export class RecordsComponent implements OnInit {
         emotionRecords: [playful, free],
         date: new Date(),
         situation: 'jdkfjdkfdf',
-        thoughts: 'jdkfjdkfj'
+        thoughts: ['jdkfjdkfj']
       },
       {
         title: 'er qerer',
@@ -120,7 +120,7 @@ export class RecordsComponent implements OnInit {
         emotionRecords: [courageous, playful],
         date: new Date(),
         situation: 'jdkfjdkfdf',
-        thoughts: 'jdkfjdkfj'
+        thoughts: ['jdkfjdkfj']
       },
       {
         title: 'kldskjfk df ',
@@ -128,7 +128,7 @@ export class RecordsComponent implements OnInit {
         emotionRecords: [playful, free],
         date: new Date(),
         situation: 'jdkfjdkfdf',
-        thoughts: 'jdkfjdkfj'
+        thoughts: ['jdkfjdkfj']
       },
       {
         title: 'llajdfk ajkdf',
@@ -136,7 +136,7 @@ export class RecordsComponent implements OnInit {
         emotionRecords: [courageous, playful],
         date: new Date(),
         situation: 'jdkfjdkfdf',
-        thoughts: 'jdkfjdkfj'
+        thoughts: ['jdkfjdkfj']
       },
       {
         title: 'pladye ff',
@@ -144,7 +144,7 @@ export class RecordsComponent implements OnInit {
         emotionRecords: [playful, free],
         date: new Date(),
         situation: 'jdkfjdkfdf',
-        thoughts: 'jdkfjdkfj'
+        thoughts: ['jdkfjdkfj']
       },
       {
         title: 'kldskjfk df ',
@@ -152,7 +152,7 @@ export class RecordsComponent implements OnInit {
         emotionRecords: [playful, free],
         date: new Date(),
         situation: 'jdkfjdkfdf',
-        thoughts: 'jdkfjdkfj'
+        thoughts: ['jdkfjdkfj']
       },
       {
         title: 'llajdfk ajkdf',
@@ -160,7 +160,7 @@ export class RecordsComponent implements OnInit {
         emotionRecords: [courageous, playful],
         date: new Date(),
         situation: 'jdkfjdkfdf',
-        thoughts: 'jdkfjdkfj'
+        thoughts: ['jdkfjdkfj']
       },
       {
         title: 'pladye ff',
@@ -168,7 +168,7 @@ export class RecordsComponent implements OnInit {
         emotionRecords: [playful, free],
         date: new Date(),
         situation: 'jdkfjdkfdf',
-        thoughts: 'jdkfjdkfj'
+        thoughts: ['jdkfjdkfj']
       }
     ];
   }
