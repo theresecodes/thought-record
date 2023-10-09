@@ -1,18 +1,29 @@
 
-<h1 class=" mat-headline-4">title</h1>
-
-<ng-container *ngFor="let emotionRecord of emotionRecords">
-  <app-emotion-details-chip [emotionRecord]="emotionRecord"></app-emotion-details-chip>
-</ng-container>
-
-<section>
-  <h3 class="mat-subtitle-1 section-heading">Situation</h3>
-  <p class="mat-body">{{ situation }}</p>
-</section>
-
-<section>
-  <h3 class="mat-subtitle-1 section-heading">Thoughts</h3>
-  <p class="mat-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto deleniti rem distinctio, numquam impedit tempore, dolore nobis omnis accusantium beatae soluta. Magnam molestiae nihil repudiandae maxime facilis delectus est id.</p>
-  <p class="mat-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto deleniti rem distinctio, numquam impedit tempore, dolore nobis omnis accusantium beatae soluta. Magnam molestiae nihil repudiandae maxime facilis delectus est id.</p>
-  <p class="mat-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto deleniti rem distinctio, numquam impedit tempore, dolore nobis omnis accusantium beatae soluta. Magnam molestiae nihil repudiandae maxime facilis delectus est id.</p>
-</section>
+<div class="container">
+  <button (click)="goToMainPage()" class="btn">
+    <img src="assets/icons/arrow-back.svg"
+      class="back"
+      alt="back to main page">
+  </button>
+  <div class="view-record">
+    <h2 class=" mat-headline-4 title">{{ thoughtRecord.title }}</h2>
+    
+    <ng-container *ngFor="let emotionRecord of thoughtRecord.emotionRecords">
+      <app-emotion-details-chip [emotionRecord]="emotionRecord"></app-emotion-details-chip>
+    </ng-container>
+    
+    <section>
+      <h3 class="mat-subtitle-1 section-heading">Situation</h3>
+      <p class="mat-body">{{ thoughtRecord.situation }}</p>
+    </section>
+    
+    <section>
+      <h3 class="mat-subtitle-1 section-heading">Thoughts</h3>
+      <ul>
+        <li *ngFor="let thought of thoughtRecord.thoughts">
+          <p class="mat-body">{{ thought }}</p>
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>

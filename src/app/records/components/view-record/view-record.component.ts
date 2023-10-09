@@ -1,23 +1,27 @@
-import { Component } from '@angular/core';
-import { EAGER, PROUD } from 'src/app/core/constants/emotions-wheel.constant';
-import { EmotionRecord } from 'src/app/core/models';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { ThoughtRecord } from 'src/app/core/models';
+import { ThoughtRecordsQuery } from 'src/app/core/state/thought-records/thought-records.query';
 
 @Component({
   selector: 'app-view-record',
   templateUrl: './view-record.component.html',
   styleUrls: ['./view-record.component.scss']
 })
-export class ViewRecordComponent {
-  routeUrl!: string;
-  emotionRecords: EmotionRecord[] = [
-    {
-      emotion: EAGER,
-      intensity: 0.80
-    },
-    {
-      emotion: PROUD,
-      intensity: 0.70
-    },
-  ];
-  situation = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto deleniti rem distinctio, numquam impedit tempore, dolore nobis omnis accusantium beatae soluta. Magnam molestiae nihil repudiandae maxime facilis delectus est id.';
+export class ViewRecordComponent implements OnInit {
+  thoughtRecord!: ThoughtRecord;
+
+  constructor(private router: Router, private activatedRoute: ActivatedRoute, private thoughtRecordQuery: ThoughtRecordsQuery) { }
+
+  ngOnInit(): void {
+    this.activatedRoute.paramMap.subscribe((params) => {
+      const id = params.get('id') as string;
+      this.thoughtRecord = this.thoughtRecordQuery.getById(id);
+    });
+
+  }
+
+  goToMainPage() {
+    this.router.navigateByUrl('/records');
+  }
 }

@@ -9,7 +9,7 @@ export interface ThoughtRecord {
   /** Facts or context when the emotion arouse. */
   situation: string,
   /** Thoughts running in ones's mind during the situation while feeling the emotion. */
-  thoughts: string,
+  thoughts: string[],
   /** Date and time when the situation occurred. */
   date: Date
 }
