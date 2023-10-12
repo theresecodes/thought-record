@@ -4,7 +4,7 @@
     <ng-container *ngFor="let feature of features; let last = last">
       <button
         mat-button
-        (click)="openDialog()">
+        (click)="navigateTo(feature)">
         {{ feature }}
       </button>
     </ng-container>
