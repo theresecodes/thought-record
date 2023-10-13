@@ -2,11 +2,10 @@
   <h1 class="app-title mat-headline-4">{{ title }}</h1>
   <div class="app-features">
     <ng-container *ngFor="let feature of features; let last = last">
-      <button
-        mat-button
-        (click)="navigateTo(feature)">
+      <a mat-button
+        routerLink="/{{feature.toLocaleLowerCase()}}">
         {{ feature }}
-      </button>
+    </a>
     </ng-container>
     
   </div>
