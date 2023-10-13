@@ -20,6 +20,19 @@ a {
   }
 }
 
+.text-align-center {
+  text-align: center;
+}
+
+.upper-center {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+
 // Needs to have important to override angular material styling
 // yellow
 .HAPPY {
