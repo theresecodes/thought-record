@@ -16,7 +16,15 @@ const routes: Routes = [
       {
         path: 'records',
         loadChildren: () => import('../app/records/records.module').then((m) => m.RecordsModule)
-      }
+      },
+      {
+        path: 'graph',
+        loadComponent: () => import('../app/graph/graph.component').then((m) => m.GraphComponent)
+      },
+      {
+        path: 'export',
+        loadComponent: () => import('../app/export/export.component').then((m) => m.ExportComponent)
+      },
     ]
   }
 ]

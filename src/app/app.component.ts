@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
 
-import { InfoDialogComponent } from './shared/info-dialog/info-dialog.component';
+import { Features } from './core/constants/features.constant';
 
 @Component({
   selector: 'app-root',
@@ -10,12 +9,5 @@ import { InfoDialogComponent } from './shared/info-dialog/info-dialog.component'
 })
 export class AppComponent {
   title = 'Thought Record App';
-  features = ['Add New Record', 'Graph', 'Export'];
-
-  constructor(public dialog: MatDialog) { }
-
-  openDialog(): void {
-    this.dialog.open(InfoDialogComponent)
-  }
-
+  readonly features = Features;
 }

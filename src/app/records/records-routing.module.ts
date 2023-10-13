@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { AddRecordComponent } from './components';
 import { RecordsComponent } from './components/records/records.component';
 import { ViewRecordComponent } from './components/view-record/view-record.component';
 
@@ -13,6 +14,10 @@ const routes: Routes = [
     path: 'records/:id',
     component: ViewRecordComponent
   },
+  {
+    path: 'add-record',
+    component: AddRecordComponent
+  }
 ];
 
 @NgModule({
