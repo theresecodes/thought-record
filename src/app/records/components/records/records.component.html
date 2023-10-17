@@ -1,14 +1,21 @@
-<div class="records-container"
-  [ngClass]="{'light-grey-bg': thoughtRecords.length }">
-  <ng-container *ngIf="thoughtRecords?.length; else noRecords ">
-    <a *ngFor="let record of thoughtRecords"
-      routerLink="records/{{record.id}}">
-      <app-record-card [thoughtRecord]="record"></app-record-card>
+<div class="page-container">
+  <div class="toolbar-container">
+    <a routerLink="add-record">
+      <mat-icon [color]="'warning'">add</mat-icon>
     </a>
-  </ng-container>
-  <ng-template #noRecords>
-    <div class="no-records">
-      <p class="mat-body-1">No thought record found.</p>
-    </div>
-  </ng-template>
+  </div>
+  <div class="records-container"
+    [ngClass]="{'light-grey-bg': thoughtRecords.length }">
+    <ng-container *ngIf="thoughtRecords?.length; else noRecords ">
+      <a *ngFor="let record of thoughtRecords"
+        routerLink="records/{{record.id}}">
+        <app-record-card [thoughtRecord]="record"></app-record-card>
+      </a>
+    </ng-container>
+    <ng-template #noRecords>
+      <div class="no-records">
+        <p class="mat-body-1">No thought record found.</p>
+      </div>
+    </ng-template>
+  </div>
 </div>
