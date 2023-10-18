@@ -1,15 +1,20 @@
+.page-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 .records-container {
-  width: 100%;
+  width: 85%;
   min-height: 20rem;
   max-height: 29.9rem;
-  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1em; 
   overflow-y: auto;
   overflow-x: hidden;
-  padding-bottom: 1rem;
+  padding: 0rem 2rem 2rem 1rem;
 }
 
 .no-records {
