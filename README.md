@@ -13,5 +13,8 @@ A simple app that let users records their thoughts and then see how they do for 
   * Add thought record
   * View thought record
   * Delete thought record
+* Others
+  * Graph
+  * Export
 
 
