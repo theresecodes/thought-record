@@ -1,10 +1,10 @@
 import { EmotionRecord } from './emotion-record.interface';
 
 export interface ThoughtRecord {
-  /** Brief readable identifier of record */
-  title: string,
   /** Unique identifier of the record */
   id: string,
+  /** Brief readable identifier of record */
+  title: string,
   emotionRecords: EmotionRecord[],
   /** Facts or context when the emotion arouse. */
   situation: string,

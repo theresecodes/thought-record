@@ -1,6 +1,6 @@
 import { EmotionData } from './emotion-data.interface';
 
-
+/** Contains emotion name and intensity */
 export interface EmotionRecord {
   emotion: EmotionData,
   /** 
