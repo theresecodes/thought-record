@@ -1,6 +1,6 @@
-import { CoreEmotions } from 'src/app/core/constants/core-emotions.constant';
-import { Emotion } from 'src/app/core/enums';
-import { CoreEmotionsType } from 'src/app/core/models';
+import { CoreEmotions } from '../../core/constants/core-emotions.constant';
+import { Emotion } from '../../core/enums';
+import { CoreEmotionsType } from '../../core/models';
 
 /**
  * Determines the core emotion among a list of emotions listed. @see EmotionData.group
