@@ -3,10 +3,12 @@ import { AddRecordComponent } from './add-record/add-record.component';
 import { AddSituationComponent } from './add-situation/add-situation.component';
 import { AddThoughtsComponent } from './add-thoughts/add-thoughts.component';
 import { AddTitleComponent } from './add-title/add-title.component';
+import { EmotionCardComponent } from './emotion-card/emotion-card.component';
 import { EmotionDetailsChipComponent } from './emotion-details-chip/emotion-details-chip.component';
 import { RecordCardComponent } from './record-card/record-card.component';
 import { RecordsPageComponent } from './records-page/records-page.component';
 import { RecordsComponent } from './records/records.component';
+import { StepComponent } from './step/step.component';
 import { ViewRecordComponent } from './view-record/view-record.component';
 
 export const components = [
@@ -19,7 +21,9 @@ export const components = [
   AddEmotionsComponent,
   AddSituationComponent,
   AddThoughtsComponent,
-  AddTitleComponent
+  AddTitleComponent,
+  EmotionCardComponent,
+  StepComponent
 ];
 
 export * from './add-record/add-record.component';
@@ -32,3 +36,5 @@ export * from './add-emotions/add-emotions.component';
 export * from './add-situation/add-situation.component';
 export * from './add-thoughts/add-thoughts.component';
 export * from './add-title/add-title.component';
+export * from './emotion-card/emotion-card.component';
+export * from './step/step.component';

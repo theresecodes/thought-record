@@ -32,6 +32,27 @@ a {
   padding: 10px;
 }
 
+.d-none {
+  display: none !important;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.mt-8 {
+  margin-top: 8rem;
+}
+
+
+.vh-85 {
+  height: 85vh !important;
+}
+
+.mat-mdc-slider {
+  width: 90% !important;
+}
+
 
 // Needs to have important to override angular material styling
 // yellow

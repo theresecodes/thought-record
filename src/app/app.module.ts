@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { MaterialModule } from './material.module';
 import { RecordsModule } from './records/records.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RecordsModule } from './records/records.module';
     CommonModule,
     AppRoutingModule,
     RecordsModule,
-    MaterialModule
+    MaterialModule,
+    SharedModule
   ],
   bootstrap: [AppComponent]
 })
