@@ -4,9 +4,9 @@ import { filter } from 'rxjs';
 
 
 @Directive({
-  selector: '[appResolveAppHeaderDisplay]'
+  selector: '[appResolveHeaderDisplay]'
 })
-export class ResolveAppHeaderDisplayDirective implements OnInit {
+export class ResolveHeaderDisplayDirective implements OnInit {
 
   constructor(private router: Router, private elementRef: ElementRef,
     private renderer2: Renderer2) { }

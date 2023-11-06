@@ -1,6 +1,6 @@
 <div class="landing-page">
-  <h1 class="app-title mat-headline-4" appResolveAppHeaderDisplay>{{ title }}</h1>
-  <div class="app-features" appResolveAppHeaderDisplay>
+  <h1 class="app-title mat-headline-4" appResolveHeaderDisplay>{{ title }}</h1>
+  <div class="app-features" appResolveHeaderDisplay>
     <ng-container *ngFor="let feature of features; let last = last">
       <a mat-button
         routerLink="/{{feature.toLocaleLowerCase()}}">
