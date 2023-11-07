@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Emotion } from 'src/app/core/enums';
 import { CoreEmotionsType, EmotionData } from 'src/app/core/models';
 import { EmotionsQuery } from 'src/app/core/state/emotions.query';
@@ -6,6 +6,8 @@ import { EmotionsQuery } from 'src/app/core/state/emotions.query';
 import { CoreEmotionsData } from '../../../core/constants/core-emotions.constant';
 import { AddEmotionHeadlineText } from '../../constants/add-emotion-headline-text.constant';
 import { AddEmotionStep } from '../../enums/add-emotion-step.enum';
+import { AddRecordStep } from '../../enums/add-record-step.enum';
+import { AddRecordStepComponent } from '../../models/add-record-step-component.model';
 import { Options } from './options.model';
 import { Selected } from './selected.model';
 
@@ -14,7 +16,7 @@ import { Selected } from './selected.model';
   templateUrl: './add-emotions.component.html',
   styleUrls: ['./add-emotions.component.scss']
 })
-export class AddEmotionsComponent {
+export class AddEmotionsComponent implements AddRecordStepComponent {
   readonly addEmotionStep = AddEmotionStep;
   readonly addEmotionHeadlineText = AddEmotionHeadlineText;
   step = AddEmotionStep.SELECT_CORE;
@@ -27,7 +29,8 @@ export class AddEmotionsComponent {
     core: null,
     specific: null,
     fineGrained: null
-  }
+  };
+  @Output() done: EventEmitter<AddRecordStep> = new EventEmitter();
 
 
   constructor(private emotionsQuery: EmotionsQuery) { }
@@ -37,7 +40,7 @@ export class AddEmotionsComponent {
     return fineGrained?.name ?? specific?.name ?? core?.name ?? Emotion.HAPPY;
   }
 
-  proceedToNextStep(nextStep: AddEmotionStep, data?: unknown) {
+  proceedToNextAddEmotionStep(nextStep: AddEmotionStep, data?: unknown) {
     switch (nextStep) {
       case AddEmotionStep.SELECT_CORE:
         this.step = nextStep;
@@ -59,7 +62,14 @@ export class AddEmotionsComponent {
       case AddEmotionStep.DONE_ADDING_EMOTION:
         this.step = AddEmotionStep.DONE_ADDING_EMOTION;
         break;
+      case AddEmotionStep.EXIT:
+        this.proceedToNextStep();
+        break;
     }
+  }
+
+  proceedToNextStep() {
+    this.done.emit(AddRecordStep.ADD_EMOTION);
   }
 
   private handleSelectSpecific(emotion: CoreEmotionsType) {

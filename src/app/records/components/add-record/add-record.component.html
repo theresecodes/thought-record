@@ -1,4 +1,19 @@
-<app-add-emotions></app-add-emotions>
-<app-add-situation></app-add-situation>
-<app-add-thoughts></app-add-thoughts>
-<app-add-title></app-add-title>
+{{ step }}
+<ng-container [ngSwitch]="step">
+  <app-add-emotions 
+    *ngSwitchCase="addRecordStep.ADD_EMOTION"
+    (done)="proceedToNextStep(addRecordStep.ADD_SITUATION)">
+  </app-add-emotions>
+  <app-add-situation 
+    *ngSwitchCase="addRecordStep.ADD_SITUATION"
+    (done)="proceedToNextStep(addRecordStep.ADD_THOUGHTS)">
+  </app-add-situation>
+  <app-add-thoughts
+    *ngSwitchCase="addRecordStep.ADD_THOUGHTS"
+    (done)="proceedToNextStep(addRecordStep.ADD_TITLE)">
+  </app-add-thoughts>
+  <app-add-title
+    *ngSwitchCase="addRecordStep.ADD_TITLE"
+    (done)="proceedToNextStep(addRecordStep.EXIT)">
+  </app-add-title>
+</ng-container>
