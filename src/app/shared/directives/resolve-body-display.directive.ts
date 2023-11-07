@@ -12,14 +12,15 @@ export class ResolveBodyDisplayDirective implements OnInit {
     private renderer2: Renderer2) { }
 
   ngOnInit(): void {
+    const fullScreenRoute = 'add-record';
     // on reload
-    this.setDisplayHeight(this.router.url.includes('add'));
+    this.setDisplayHeight(this.router.url.includes(fullScreenRoute));
 
     // on navigation from records page to add record
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe((event) => {
-        const isAppHeaderRemoved = (event as NavigationEnd).url.includes('add')
+        const isAppHeaderRemoved = (event as NavigationEnd).url.includes(fullScreenRoute);
         this.setDisplayHeight(isAppHeaderRemoved)
       })
   }

@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { Emotion } from 'src/app/core/enums';
 import { CoreEmotionsType, EmotionData } from 'src/app/core/models';
 import { EmotionsQuery } from 'src/app/core/state/emotions.query';
 
@@ -7,6 +8,8 @@ import { AddEmotionHeadlineText } from '../../constants/add-emotion-headline-tex
 import { AddEmotionStep } from '../../enums/add-emotion-step.enum';
 import { AddRecordStep } from '../../enums/add-record-step.enum';
 import { AddRecordStepComponent } from '../../models/add-record-step-component.model';
+import { Options } from './options.model';
+import { Selected } from './selected.model';
 
 @Component({
   selector: 'app-add-emotions',
@@ -15,21 +18,26 @@ import { AddRecordStepComponent } from '../../models/add-record-step-component.m
 })
 export class AddEmotionsComponent implements AddRecordStepComponent {
   readonly addEmotionStep = AddEmotionStep;
-  readonly coreEmotions = CoreEmotionsData;
   readonly addEmotionHeadlineText = AddEmotionHeadlineText;
   step = AddEmotionStep.SELECT_CORE;
-  selectedCore!: EmotionData;
-  specificEmotions!: EmotionData[];
-  specificEmotion!: EmotionData;
-  fineGrainedEmotions!: EmotionData[];
-  fineGrainedEmotion!: EmotionData;
+  options: Options = {
+    core: CoreEmotionsData,
+    specific: [],
+    fineGrained: []
+  };
+  selected: Selected = {
+    core: null,
+    specific: null,
+    fineGrained: null
+  };
   @Output() done: EventEmitter<AddRecordStep> = new EventEmitter();
 
 
   constructor(private emotionsQuery: EmotionsQuery) { }
 
-  get identifiedEmotion(): string {
-    return this.fineGrainedEmotion?.name ?? this.specificEmotion?.name ?? this.selectedCore;
+  get identifiedEmotion(): Emotion {
+    const { fineGrained, specific, core } = this.selected;
+    return fineGrained?.name ?? specific?.name ?? core?.name ?? Emotion.HAPPY;
   }
 
   proceedToNextAddEmotionStep(nextStep: AddEmotionStep, data?: unknown) {
@@ -65,20 +73,20 @@ export class AddEmotionsComponent implements AddRecordStepComponent {
   }
 
   private handleSelectSpecific(emotion: CoreEmotionsType) {
-    this.selectedCore = this.emotionsQuery.getCoreEmotionData(emotion);
+    this.selected.core = this.emotionsQuery.getCoreEmotionData(emotion);
     this.step = AddEmotionStep.SELECT_SPECIFIC;
-    this.specificEmotions = this.emotionsQuery.getSpecificEmotionsByCore(emotion);
+    this.options.specific = this.emotionsQuery.getSpecificEmotionsByCore(emotion);
   }
 
   private handleSelectFineGrained(emotion: EmotionData) {
-    this.specificEmotion = emotion;
-    this.fineGrainedEmotions = this.emotionsQuery.getFineGrainedEmotion(emotion, this.selectedCore.name as CoreEmotionsType);
+    this.selected.specific = emotion;
+    this.options.fineGrained = this.emotionsQuery.getFineGrainedEmotion(emotion, this.selected.core!.name as CoreEmotionsType);
     this.step = AddEmotionStep.SELECT_FINE_GRAINED;
   }
 
   private handleIntensityRating(emotion: EmotionData) {
     this.step = AddEmotionStep.RATE;
-    this.fineGrainedEmotion = emotion;
+    this.selected.fineGrained = emotion;
   }
 
   private handleAddMoreEmotion() {

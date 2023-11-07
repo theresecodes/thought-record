@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { MaterialModule } from '../material.module';
 import { EmotionBgDirective } from './directives/emotion-bg.directive';
-import { ResolveAppHeaderDisplayDirective } from './directives/resolve-app-header-display.directive';
 import { ResolveBodyDisplayDirective } from './directives/resolve-body-display.directive';
+import { ResolveHeaderDisplayDirective } from './directives/resolve-header-display.directive';
 import { InfoDialogComponent } from './info-dialog/info-dialog.component';
 import { TextOverflowPipe } from './text-overflow.pipe';
 
@@ -15,13 +15,13 @@ import { TextOverflowPipe } from './text-overflow.pipe';
     TextOverflowPipe,
     EmotionBgDirective,
     InfoDialogComponent,
-    ResolveAppHeaderDisplayDirective,
+    ResolveHeaderDisplayDirective,
     ResolveBodyDisplayDirective
   ],
   imports: [
     CommonModule,
     MaterialModule
   ],
-  exports: [TextOverflowPipe, EmotionBgDirective, InfoDialogComponent, ResolveAppHeaderDisplayDirective, ResolveBodyDisplayDirective]
+  exports: [TextOverflowPipe, EmotionBgDirective, InfoDialogComponent, ResolveHeaderDisplayDirective, ResolveBodyDisplayDirective]
 })
 export class SharedModule { }
