@@ -12,10 +12,13 @@ export class ResolveHeaderDisplayDirective implements OnInit {
     private renderer2: Renderer2) { }
 
   ngOnInit(): void {
+
     this.router.events
       .pipe(filter((event: unknown) => event instanceof NavigationEnd))
       .subscribe((event) => {
-        if ((event as NavigationEnd)?.url.includes('add')) {
+        const fullScreenRoute = 'add-record';
+
+        if ((event as NavigationEnd)?.url.includes(fullScreenRoute)) {
           this.renderer2.addClass(this.elementRef.nativeElement, 'd-none');
         } else {
           this.renderer2.removeClass(this.elementRef.nativeElement, 'd-none');
