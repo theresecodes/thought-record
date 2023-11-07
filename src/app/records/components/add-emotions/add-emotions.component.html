@@ -13,7 +13,7 @@
     <ng-container headline>{{ addEmotionHeadlineText[addEmotionStep.SELECT_CORE] }}</ng-container>
     <div body class="emotions-container">
       <app-emotion-card 
-        *ngFor="let emotion of coreEmotions"
+        *ngFor="let emotion of options.core"
         [emotion]="emotion"
         (click)="proceedToNextStep(addEmotionStep.SELECT_SPECIFIC, emotion)">
       </app-emotion-card>
@@ -26,11 +26,11 @@
     <ng-container headline>{{ addEmotionHeadlineText[addEmotionStep.SELECT_SPECIFIC] }}</ng-container>
     
     <div body class="flex-half-gap">
-      <app-emotion-card class="core-emotion-selection" [emotion]="this.selectedCore" [isSelected]="true"></app-emotion-card>
+      <app-emotion-card class="core-emotion-selection" [emotion]="selected.core!" [isSelected]="true"></app-emotion-card>
       
       <div class="flex-wrap-half-gap">
         <app-emotion-card 
-          *ngFor="let emotion of specificEmotions"
+          *ngFor="let emotion of options.specific"
           [emotion]="emotion"
           (click)="proceedToNextStep(addEmotionStep.SELECT_FINE_GRAINED, emotion)">
         </app-emotion-card>
@@ -49,12 +49,12 @@
     <ng-container headline>{{ addEmotionHeadlineText[addEmotionStep.SELECT_FINE_GRAINED] }}</ng-container>
     
     <div body class="flex-half-gap">
-      <app-emotion-card [emotion]="this.selectedCore" [isSelected]="true"></app-emotion-card>
-      <app-emotion-card class="flex-wrap-half-gap" [emotion]="this.specificEmotion" [isSelected]="true"></app-emotion-card>
+      <app-emotion-card [emotion]="selected.core!" [isSelected]="true"></app-emotion-card>
+      <app-emotion-card class="flex-wrap-half-gap" [emotion]="selected.specific!" [isSelected]="true"></app-emotion-card>
   
       <div class="flex-wrap-half-gap">
         <app-emotion-card 
-          *ngFor="let emotion of fineGrainedEmotions"
+          *ngFor="let emotion of options.fineGrained"
           [emotion]="emotion"
           (click)="proceedToNextStep(addEmotionStep.RATE, emotion)">
         </app-emotion-card>
