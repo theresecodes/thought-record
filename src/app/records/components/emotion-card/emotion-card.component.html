@@ -1,0 +1,13 @@
+<mat-card 
+  class="col-3"
+  [ngClass]="{
+    'selected': isSelected,
+    'specific-emotion-card': emotion.specificity === specificity.SPECIFIC,
+    'emotion-card': emotion.specificity !== specificity.SPECIFIC && !isSelected,
+    'fine-grained-emotion-card': emotion.specificity === specificity.FINE_GRAINED
+    }" 
+  [appEmotionBg]="emotion.groups| coreEmotion">
+  <mat-card-content>
+    <h2 class="mat-headline-6	">{{ emotion.name }}</h2>
+  </mat-card-content>
+</mat-card>

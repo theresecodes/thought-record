@@ -1,0 +1,39 @@
+.emotion-card {
+  width: 15rem;
+  height: 12rem;
+  justify-content: center;
+  align-items: center;
+   
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.specific-emotion-card {
+  width: 18rem;
+  height: 8rem;
+  justify-content: center;
+  align-items: center;
+   
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.fine-grained-emotion-card {
+  width: 34.5rem;
+  height: 8rem;
+  justify-content: center;
+  align-items: center;
+   
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.selected {
+  height: 100%;
+  width: 20rem;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,1 +1,112 @@
-emotions work
+<ng-container [ngSwitch]="step">
+  <ng-container *ngSwitchCase="addEmotionStep.SELECT_CORE" [ngTemplateOutlet]="selectCore"></ng-container>
+  <ng-container *ngSwitchCase="addEmotionStep.SELECT_SPECIFIC" [ngTemplateOutlet]="selectSpecific"></ng-container>
+  <ng-container *ngSwitchCase="addEmotionStep.SELECT_FINE_GRAINED" [ngTemplateOutlet]="selectFineGrained"></ng-container>
+  <ng-container *ngSwitchCase="addEmotionStep.RATE" [ngTemplateOutlet]="rate"></ng-container>
+  <ng-container *ngSwitchCase="addEmotionStep.ADD_MORE_EMOTION" [ngTemplateOutlet]="addMoreEmotion"></ng-container>
+  <ng-container *ngSwitchCase="addEmotionStep.DONE_ADDING_EMOTION" [ngTemplateOutlet]="doneAddingEmotion"></ng-container>
+</ng-container>
+
+<!-- Steps Implementation -->
+<ng-template #selectCore>
+  <app-step>
+    <ng-container headline>{{ addEmotionHeadlineText[addEmotionStep.SELECT_CORE] }}</ng-container>
+    <div body class="emotions-container">
+      <app-emotion-card 
+        *ngFor="let emotion of options.core"
+        [emotion]="emotion"
+        (click)="proceedToNextStep(addEmotionStep.SELECT_SPECIFIC, emotion)">
+      </app-emotion-card>
+    </div>
+  </app-step>
+</ng-template>
+
+<ng-template #selectSpecific>
+  <app-step>
+    <ng-container headline>{{ addEmotionHeadlineText[addEmotionStep.SELECT_SPECIFIC] }}</ng-container>
+    
+    <div body class="flex-half-gap">
+      <app-emotion-card class="core-emotion-selection" [emotion]="selected.core!" [isSelected]="true"></app-emotion-card>
+      
+      <div class="flex-wrap-half-gap">
+        <app-emotion-card 
+          *ngFor="let emotion of options.specific"
+          [emotion]="emotion"
+          (click)="proceedToNextStep(addEmotionStep.SELECT_FINE_GRAINED, emotion)">
+        </app-emotion-card>
+      </div>
+    </div>
+  
+    <div footer class="btn-container">
+      <button mat-raised-button color="warn" class="btn"
+        (click)="proceedToNextStep(addEmotionStep.RATE)">No</button>
+    </div>
+  </app-step>
+</ng-template>
+
+<ng-template #selectFineGrained>
+  <app-step>
+    <ng-container headline>{{ addEmotionHeadlineText[addEmotionStep.SELECT_FINE_GRAINED] }}</ng-container>
+    
+    <div body class="flex-half-gap">
+      <app-emotion-card [emotion]="selected.core!" [isSelected]="true"></app-emotion-card>
+      <app-emotion-card class="flex-wrap-half-gap" [emotion]="selected.specific!" [isSelected]="true"></app-emotion-card>
+  
+      <div class="flex-wrap-half-gap">
+        <app-emotion-card 
+          *ngFor="let emotion of options.fineGrained"
+          [emotion]="emotion"
+          (click)="proceedToNextStep(addEmotionStep.RATE, emotion)">
+        </app-emotion-card>
+      </div>
+    </div>
+  
+    <div footer class="btn-container">
+      <button mat-raised-button color="warn" class="btn"
+      (click)="proceedToNextStep(addEmotionStep.RATE)">No</button>
+    </div>
+  </app-step>
+</ng-template>
+
+<ng-template #rate>
+  <app-step>
+    <ng-container headline>{{ addEmotionHeadlineText[addEmotionStep.RATE](identifiedEmotion) }}</ng-container>
+    <div body class="rating-container mt-4">
+      <mat-slider min="0" max="100" step="5" showTickMarks discrete>
+        <input matSliderThumb>
+      </mat-slider>
+    </div>
+    <div footer class="btn-container">
+      <button mat-raised-button color="primary" class="btn"
+        (click)="proceedToNextStep(addEmotionStep.ADD_MORE_EMOTION)">Next</button>
+    </div>
+  </app-step>
+  
+</ng-template>
+
+<ng-template #addMoreEmotion>
+  <app-step>
+    <ng-container headline>{{ addEmotionHeadlineText[addEmotionStep.ADD_MORE_EMOTION] }}</ng-container>
+    <div body class="yes-no-container mt-4">
+      <button mat-raised-button color="primary" class="card-btn"
+       (click)="proceedToNextStep(addEmotionStep.SELECT_CORE)">Yes</button>
+       <button mat-raised-button color="warn" class="card-btn"
+       (click)="proceedToNextStep(addEmotionStep.DONE_ADDING_EMOTION)">No</button>
+    </div>
+  </app-step>
+</ng-template>
+
+<ng-template #doneAddingEmotion>
+  <app-step>
+    <ng-container headline>{{ addEmotionHeadlineText[addEmotionStep.DONE_ADDING_EMOTION] }}</ng-container>
+    <div body class="yes-no-container mt-4">
+      <p>{{ identifiedEmotion }}</p>
+      <button mat-raised-button color="primary" class="card-btn"
+       (click)="proceedToNextStep(addEmotionStep.SELECT_CORE)">Yes</button>
+       <button mat-raised-button color="warn" class="card-btn"
+       (click)="proceedToNextStep(addEmotionStep.DONE_ADDING_EMOTION)">No</button>
+    </div>
+  </app-step>
+</ng-template>
+
+
