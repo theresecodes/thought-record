@@ -102,9 +102,9 @@
     <div body class="yes-no-container mt-4">
       <p>{{ identifiedEmotion }}</p>
       <button mat-raised-button color="primary" class="card-btn"
-       (click)="proceedToNextAddEmotionStep(addEmotionStep.SELECT_CORE)">Yes</button>
+       (click)="proceedToNextAddEmotionStep(addEmotionStep.EXIT)">Yes</button>
        <button mat-raised-button color="warn" class="card-btn"
-       (click)="proceedToNextAddEmotionStep(addEmotionStep.DONE_ADDING_EMOTION)">No</button>
+       (click)="proceedToNextAddEmotionStep(addEmotionStep.SELECT_CORE)">No</button>
     </div>
   </app-step>
 </ng-template>
